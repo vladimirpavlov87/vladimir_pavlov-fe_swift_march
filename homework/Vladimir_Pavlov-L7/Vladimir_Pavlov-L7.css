@@ -1,0 +1,52 @@
+body {
+	font-family: Arial;
+	margin: 10px 280px;
+}
+h1 {
+	color: red;
+	font-size: 28px;
+}
+a {
+	color: red;
+}
+.italic-link {
+	font-style: italic;
+	text-decoration: none;
+}
+.bold {
+	font-weight: bold;
+}
+input[type=button] {
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	position: fixed;
+	top: 50px;
+	right: 20px;		
+}
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+}
+.nav li {
+	float: left;
+}
+.nav li a {
+	display: block;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 10px 12px;
+	margin: 0 0 0 13px;
+	text-decoration: none;	
+}
+.nav li a:hover {
+	background-color: blue;
+}
+.img {
+	width: 70%;
+	margin: 20px 0 0 110px;
+}
