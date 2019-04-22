@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+h1 {
+	color: red;
+	font-size: 28px;
+}
+a {
+	color: red;
+}
+.italic-link {
+	font-style: italic;
+	text-decoration: none;
+}
+.bold {
+	font-weight: bold;
+}
+.column {
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+input[type=button] {
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	position: fixed;			
+}
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+}
+.nav li {
+	float: left;
+}
+.nav li a {
+	display: block;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 10px 12px;
+	margin: 0 0 0 13px;
+	text-decoration: none;	
+}
+.nav li a:hover {
+	background-color: blue;
+}
+.img {
+	width: 70%;
+	margin: 60px 0 0 130px;
+}
+.nav-mobile > div {
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  margin: -30px 0px;
+}
+.nav-mobile {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100px;
+	height: 100px;	
+}
+@media (max-width: 800px) {
+	.column {
+		width: 100%;
+	}
+	.nav {
+		position: absolute;
+		right: 100px;
+		display: none;
+		width: 180px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav > li {
+		margin: 5px 0;
+	}
+
+	.nav-mobile,
+	.nav-mobile:hover + .nav,
+	.nav:hover {
+		display: flex;
+	}
+	input[type=button] {
+	bottom: 0px;
+	right: 20px;		
+	}
+}
+@media (max-width: 1200px) {
+	.column {
+		width: 50%;
+	}
+	input[type=button] {
+	bottom: 80px;
+	right: 20px;		
+}
+}
+@media (min-width: 1200px) {
+	body {	
+		margin: 10px 280px;	
+	}
+	input[type=button] {	
+	top: 80px;
+	right: 20px;		
+}
+}
