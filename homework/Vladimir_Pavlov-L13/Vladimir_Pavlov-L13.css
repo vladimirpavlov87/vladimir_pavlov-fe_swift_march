@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;	
+}
+body {
+	margin: 0;
+	font-family: Times New Roman;	
+}
+.baner {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(60, 60, 60);
+}
+.nav-list {
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;	
+	background-color: black;
+}
+.nav-list li {
+	margin: 0 3px;
+	display: inline-block;		
+}
+.nav-list li a {
+	padding: 5px 5px;
+	color: white;
+	background-color: black;
+	text-decoration: none;	
+}
+.nav-list li a:hover {
+	background-color: blue;	
+}
+.dropdown-content {
+  	display: none;
+ 	position: absolute;
+  	min-width: 100px;  
+}
+.dropdown-content a {
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: center;
+}
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+	background-color: yellow;		
+}
+.main-conteiner {	
+	margin: 0 auto;
+	width: 1000px;	
+}
+.gallery-conteiner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.gallery {
+	margin: 16px;
+	border: 1px solid black;
+	display: inline-block;	
+}
+.img-g {
+	width: 215px;
+	height: 315px;
+	padding: 4px 4px 0px 4px;
+}
+.desc {
+	padding: 5px;
+	margin: 0px 4px 4px 4px;
+	text-align: center;
+	background-color: lightgray;
+}
+.main-text {
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 2px;
+	line-height: 1.8;
+	border-bottom: 1px solid black;
+	padding: 20px;
+}
+.article {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+}
+.artn {
+	display: flex;
+	flex-direction: row;	
+}
+.pic {
+	margin: 10px;	
+	padding: 5px 5px 0px 5px;
+	border: 1px solid black;
+}
+.pic img {
+	width: 180px;
+	height: 150px;		
+}
+.pic-text h3 {
+	text-transform: uppercase;
+}
+.artn a {
+	color: orange;
+}
+.readmore {
+	float: right;
+}
+.cat-g {
+	border-bottom: 1px solid black;	
+}
+.cat-l {
+	border-bottom: 1px dashed black;
+	padding: 8px;
+}
+.cat-l:hover {
+	background-color: yellow; 
+}
+.section {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0 30px 0;
+}
+.categories {
+	width: 320px;
+}
+.categories a {
+	text-decoration: none;
+	color: rgb(60, 60, 60);
+}
+.ban-end {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(60, 60, 60);
+	color: white;
+}
